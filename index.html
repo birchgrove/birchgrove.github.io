@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>彩狸喵视频解析</title>
+		<meta name="viewport" content="width=device-width,anicital-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+		<link rel="stylesheet" href="skins/eden.css" media="screen">
+		<link href="css/animate.css" rel="stylesheet">
+		<link rel="shortcut icon" href="clymiao.ico" type="image/x-icon" />
+		<script>
+			function play() {
+				var rul = document.getElementById("url").value; //获取input链接
+				if(rul == "") {
+					alert("vip解析提示您：请输入链接，没连接我给你解析个毛线")
+				} else {
+
+					var paly = document.getElementById("palybox"); //获取播放窗口位置
+					var jkv = "http://vip.gzzza.com/vip.php?url=";
+					paly.src = jkv + rul; //接口赋值
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="tables">彩狸喵视频解析</h1>
+			<!--视频box区域-->
+			<div class="well bs-component">
+				<!--无法全屏？点击<button class="btn btn-primary btn-sm" role="button" width=100%>强制全屏</button>开启新窗口-->
+				
+				<iframe width=100% height=480px id="palybox" src="videoplayer.html" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+				<div>
+					<br>
+					<div>
+						<div class="url-box">
+							<!--<div class="input-group">
+								<span class="input-group-addon">线路选择</span>
+								<select class="form-control" id="select">
+									<option selected="selected">1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<br>-->
+							<div class="input-group">
+								<span class="input-group-addon">视频网址</span>
+								<input class="form-control" id="url" type="text" placeholder="请在这里粘贴视频网址" title="请复制你想要看的视频网址，粘贴到此处点击播放即可！"">
+								<!-- <button type="button"  class="close" data-dismiss="alert">×</button></input>
+								input type="text" id="url" class="form-control url-text" aria-label="Text input with segmented button dropdown" placeholder="请在这粘贴视频网址" title="请复制你想要看的视频网址，粘贴到此处点击播放即可！" value="http://www.iqiyi.com/v_19rrf95tfg.html" -->
+
+							</div>		
+							<br>
+							<div width=100%>
+								<!--button type="button" class="btn btn-default btn-play" title="点击开始解析并开始播放" onclick="play()">解析播放</button>-->
+								<button type="submit" class="btn btn-primary btn-block" onclick="play()">开始播放</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<br>
+					<center><span class="label label-warning">警告</span><span class="text-warning"><b> 本站不提供任何视频缓存服务！所有解析服务均来自互联网！</b></span></center>
+				</div>
+			</div>
+			<center>
+			<span>© 2018 彩狸喵 All Rights Reserved.<br>如果您觉得好用请分享给您的朋友。</span><br>
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5778081'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/stat.php%3Fid%3D5778081%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+			</center>
+		</div>
+	</body>
+</html>
